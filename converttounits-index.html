@@ -102,23 +102,21 @@
 
   /* Footer */
   footer { position:relative; z-index:1; border-top:1px solid var(--border); padding:28px 40px; display:flex; justify-content:space-between; align-items:center; }
-  .blog-section { position:relative; z-index:1; max-width:1200px; margin:0 auto; padding:60px 40px; }
-  .blog-eyebrow { font-size:0.7rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--blue-light); margin-bottom:10px; display:flex; align-items:center; gap:8px; }
-  .blog-eyebrow::before { content:''; width:24px; height:1px; background:var(--blue-light); }
-  .blog-title { font-family:'Syne',sans-serif; font-size:1.8rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:8px; }
-  .blog-sub { color:var(--text-muted); font-size:0.88rem; margin-bottom:32px; }
+  footer p { font-size:0.75rem; color:var(--text-dim); }
+  footer a { color:var(--text-muted); text-decoration:none; font-size:0.75rem; }
+  footer a:hover { color:var(--blue-light); }
+  .blog-section { position:relative; z-index:1; max-width:1200px; margin:0 auto; padding:40px 40px 60px; border-top:1px solid var(--border); }
+  .blog-eyebrow { font-size:0.7rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--blue-light); margin-bottom:10px; }
+  .blog-title { font-family:'Syne',sans-serif; font-size:1.6rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:8px; }
+  .blog-sub { color:var(--text-muted); font-size:0.88rem; margin-bottom:28px; }
   .blog-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
   .blog-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:22px; text-decoration:none; display:block; transition:all 0.2s; }
   .blog-card:hover { border-color:var(--blue-dim); transform:translateY(-3px); }
   .blog-tag { font-size:0.65rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--blue-light); margin-bottom:8px; }
-  .blog-card-title { font-family:'Syne',sans-serif; font-size:0.95rem; font-weight:600; color:var(--text); line-height:1.35; margin-bottom:8px; }
+  .blog-card-title { font-family:'Syne',sans-serif; font-size:0.9rem; font-weight:600; color:var(--text); line-height:1.35; margin-bottom:8px; }
   .blog-card-desc { font-size:0.78rem; color:var(--text-muted); line-height:1.6; }
-  .conv-desc { font-size:0.78rem; color:var(--text-muted); line-height:1.6; padding:10px 0 4px; border-top:1px solid var(--border); margin-top:8px; }
   @media(max-width:768px) { .blog-grid { grid-template-columns:1fr 1fr; } }
   @media(max-width:480px) { .blog-grid { grid-template-columns:1fr; } }
-  footer p { font-size:0.75rem; color:var(--text-dim); }
-  footer a { color:var(--text-muted); text-decoration:none; font-size:0.75rem; }
-  footer a:hover { color:var(--blue-light); }
 
   /* Animations */
   .converter { opacity:0; animation:fadeUp 0.5s ease forwards; }
@@ -235,7 +233,6 @@
       </div>
     </div>
   </div>
-  <div class="conv-desc">Convert between meters, feet, inches, kilometers, miles, yards and more. Essential for travel, construction, and international measurements.</div>
 
   <!-- WEIGHT -->
   <div class="converter" id="weight">
@@ -284,7 +281,6 @@
       </div>
     </div>
   </div>
-  <div class="conv-desc">Convert kilograms, pounds, grams, ounces, stones and tonnes. Perfect for cooking, fitness tracking, and shipping calculations.</div>
 
   <!-- TEMPERATURE -->
   <div class="converter" id="temperature">
@@ -325,7 +321,6 @@
       </div>
     </div>
   </div>
-  <div class="conv-desc">Convert Celsius, Fahrenheit, and Kelvin instantly. Useful for weather, cooking, science, and understanding international forecasts.</div>
 
   <!-- SPEED -->
   <div class="converter" id="speed">
@@ -370,7 +365,6 @@
       </div>
     </div>
   </div>
-  <div class="conv-desc">Convert km/h, mph, m/s, knots and more. Ideal for travel, aviation, sports performance, and physics calculations.</div>
 
   <!-- AREA -->
   <div class="converter" id="area">
@@ -419,7 +413,6 @@
       </div>
     </div>
   </div>
-  <div class="conv-desc">Convert square meters, square feet, acres, hectares and more. Essential for real estate, agriculture, and construction projects.</div>
 
   <!-- VOLUME -->
   <div class="converter" id="volume">
@@ -470,7 +463,6 @@
       </div>
     </div>
   </div>
-  <div class="conv-desc">Convert liters, gallons, cups, milliliters, fluid ounces and more. Perfect for cooking, fuel calculations, and laboratory use.</div>
 
   <!-- DATA -->
   <div class="converter" id="data">
@@ -517,7 +509,6 @@
       </div>
     </div>
   </div>
-  <div class="conv-desc">Convert bytes, kilobytes, megabytes, gigabytes, terabytes and more. Essential for understanding file sizes and storage capacity.</div>
 
   <!-- TIME -->
   <div class="converter" id="time">
@@ -568,15 +559,11 @@
       </div>
     </div>
   </div>
-  <div class="conv-desc">Convert seconds, minutes, hours, days, weeks, months and years. Useful for scheduling, project management, and time zone calculations.</div>
 
 </div>
-
-</div>
-
 
 <div class="blog-section">
-  <div class="blog-eyebrow">Conversion Guides</div>
+  <div class="blog-eyebrow">CONVERSION GUIDES</div>
   <div class="blog-title">Learn More About Unit Conversions</div>
   <p class="blog-sub">In-depth guides to help you understand unit conversions, formulas, and real-world applications.</p>
   <div class="blog-grid">
@@ -588,17 +575,17 @@
     <a href="blog-celsius-to-fahrenheit.html" class="blog-card">
       <div class="blog-tag">Temperature</div>
       <div class="blog-card-title">Celsius to Fahrenheit: Formula and Quick Reference</div>
-      <div class="blog-card-desc">The conversion formula, a full reference chart, and which countries use which scale.</div>
+      <div class="blog-card-desc">The conversion formula, a full reference chart, and which countries use which temperature scale.</div>
     </a>
     <a href="blog-miles-to-kilometers.html" class="blog-card">
       <div class="blog-tag">Length</div>
       <div class="blog-card-title">Miles to Kilometers: Complete Guide</div>
-      <div class="blog-card-desc">How to convert miles to km, a full chart, and why different countries use different units.</div>
+      <div class="blog-card-desc">How to convert miles to km, a full chart, and why different countries use different distance units.</div>
     </a>
     <a href="blog-metric-vs-imperial.html" class="blog-card">
       <div class="blog-tag">Guide</div>
       <div class="blog-card-title">Metric vs Imperial: Which Countries Use Which?</div>
-      <div class="blog-card-desc">A complete guide to the two measurement systems — history, differences, and who uses what.</div>
+      <div class="blog-card-desc">A complete guide to the two measurement systems, their history, and who uses what today.</div>
     </a>
   </div>
 </div>
